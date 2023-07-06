@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.vmain{
+    width: 90%;
+    height: 60vh;
+    margin: auto;
+    margin-bottom: 2%; 
+}
+.video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
