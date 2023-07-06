@@ -170,35 +170,35 @@ const Navbar = () => {
             <Hide below="md">
               <HStack color={"white"} spacing="10px">
                 <Link
-                  // to="/productPage"
+                  to="/productPage"
                   className="categories"
                   _hover={{ underLine: "none" }}
                 >
                   MOUNTAIN
                 </Link>
                 <Link
-                  // to="/productPage"
+                  to="/productPage"
                   className="categories"
                   _hover={{ underLine: "none" }}
                 >
                   ROAD
                 </Link>
                 <Link
-                  // to="/productPage"
+                  to="/productPage"
                   className="categories"
                   _hover={{ underLine: "none" }}
                 >
                   ACTIVE
                 </Link>
                 <Link
-                  // to="/productPage"
+                  to="/productPage"
                   className="categories"
                   _hover={{ underLine: "none" }}
                 >
                   ELECTRIC
                 </Link>
                 <Link
-                  // to="/productPage"
+                  to="/productPage"
                   className="categories"
                   _hover={{ underLine: "none" }}
                 >
@@ -230,7 +230,7 @@ const Navbar = () => {
                   //   width: "400px",
                   borderRadius: "20px",
                 }}
-                // onChange={handleSearch}
+                onChange={handleSearch}
               />
               <InputRightAddon
                 zIndex="1"
@@ -273,9 +273,7 @@ const Navbar = () => {
           <Hide below="lg">
             <Box mr={"20px"}>
               <HStack spacing={"10px"}>
-                <Link 
-                // to="/wishlist"
-                >
+                <Link to="/wishlist">
                   <Text
                      position={"absolute"}
                      ml={"27px"}
@@ -293,9 +291,7 @@ const Navbar = () => {
                     w={"40px"}
                   />
                 </Link>
-                <Link 
-                // to="/cart"
-                >
+                <Link to="/cart">
                   <Text
                     position={"absolute"}
                     ml={"67px"}

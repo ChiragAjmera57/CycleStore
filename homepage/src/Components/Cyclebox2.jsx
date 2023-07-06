@@ -38,9 +38,7 @@ const Cyclebox2 = () => {
           >
             Find Your Perfect Bike
           </Text>
-          <Button  colorScheme="blue" 
-          // onClick={()=>navigate("/productPage")}
-          >
+          <Button  colorScheme="blue" onClick={()=>navigate("/productPage")}>
             Shop Now
           </Button>
           </div>

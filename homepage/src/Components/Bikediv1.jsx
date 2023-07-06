@@ -33,9 +33,7 @@ const Bikediv1 = () => {
           >
             It's not just a new bike, it's you, only faster
           </Text>
-          <Button variant={"outline"} colorScheme="yellow" 
-          // onClick={()=>navigate("/productPage")}
-          >
+          <Button variant={"outline"} colorScheme="yellow" onClick={()=>navigate("/productPage")}>
             CATALOGUE
           </Button>
         </Box>

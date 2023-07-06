@@ -164,9 +164,7 @@ const ProductCard = ({ productData}) => {
         {/* <Button variant="outline" colorScheme="orange" onClick={handleAddToCart}>
           Add to cart
         </Button> */}
-        <Button colorScheme="red" size={{base:'sm', md:'md'}}><Text 
-        // onClick={handleAddToCart} 
-        fontSize={{base:'sm'}}>ADD TO CART</Text></Button>
+        <Button colorScheme="red" size={{base:'sm', md:'md'}}><Text onClick={handleAddToCart} fontSize={{base:'sm'}}>ADD TO CART</Text></Button>
       </Flex>
     </Box>
   );

@@ -190,10 +190,10 @@ const Floating = () => {
                       {slide.description}
                     </Text>
                     <Button
-                      
+                      variant={"outline"}
                       colorScheme="cyan"
                       w={{ base: "90px", md: "120px" }}
-                      // onClick={()=>navigate("/productPage")}
+                      onClick={()=>navigate("/productPage")}
                     >
                       Shop Now
                     </Button>
