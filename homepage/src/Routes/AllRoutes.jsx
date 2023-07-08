@@ -19,7 +19,7 @@ const AllRoutes = () => {
       <Route path="/productPage/details/:id" element={<Detailspage/>}/>
       <Route path="/cart" element={<CartPage/>} />
       <Route path="/wishlist" element= {<Wishlist/> }/>
-      <Route path="/payment" element={<Protected><PaymentPage/></Protected>}/>
+      <Route path="/payment" element={<PaymentPage/>}/>
       <Route path="*" element={<Homepage/>}/>
 
       {/* Extra Routes */}{/* Not working properly */}

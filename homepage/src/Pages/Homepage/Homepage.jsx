@@ -15,7 +15,7 @@ const Homepage = () => {
 
 
   return (
-    <Box color="white" maxW={"100%"}>
+    <Box color="white"  maxW={"100%"}>
 
       <Floating />
       <Video />

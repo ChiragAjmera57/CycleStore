@@ -30,7 +30,7 @@ const Discount = () => {
                 isLoading ? <Heading>Loading...</Heading> :
             
             <>
-            <Box my={'20px'}><Heading>BIKES DISCOUNT OF THIS MONTH</Heading></Box>
+            <Box my={'20px'} color="grey" fontWeight="300"><Heading>BIKES DISCOUNT OF THIS MONTH</Heading></Box>
             <Box my={'20px'}>
                 <Flex gap={{base:'10px',md:'20px'}} direction={{base:'column', md:'row'}}>
                         {

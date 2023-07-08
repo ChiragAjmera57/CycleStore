@@ -1,38 +1,31 @@
 /* Category List */
-.categories{
-    text-decoration: 'none';
-    font-size: small;
-}
-.categories:hover{
-    color: rgb(245, 228, 146);
-}
+
+
+
 
 
 /* Search Input ---------------------------*/
+
 .searchInput::placeholder{
+
     color: rgb(242, 245, 245);
+  
     font-size: 14px;
-    
-}
-/* --------------------------------------------- */
-
-
-/* navBelow links --------------------------------- */   
-.navBelow{
-    text-align: center;
-    /* border: 1px solid green; */
-    height: 100%;
-}
-
-.navBelowLink:hover{
-    
-   text-decoration: none;
-    color: antiquewhite;
-}
-
-.navBelowLink {
-    /* border: 1px solid red; */
-    font-size: small;
-}
-
-/* ------------------------------------------------------- */
+  
+     
+  
+  }
+  
+  /* --------------------------------------------- */
+  
+  
+  
+  
+  
+  /* navBelow links --------------------------------- */  
+  
+  
+  
+  
+  
+  /* ------------------------------------------------------- */

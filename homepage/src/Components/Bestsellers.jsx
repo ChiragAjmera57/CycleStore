@@ -31,7 +31,7 @@ const Bestsellers = () => {
                 isLoading ? <Heading><Spinner /></Heading> :
             
             <>
-            <Box my={'20px'}><Heading>CHOOSE OUR BEST SELLERS</Heading></Box>
+            <Box my={'20px'} color="grey" fontWeight="300"><Heading>CHOOSE OUR BEST SELLERS</Heading></Box>
             <Box my={'20px'}>
                 <Flex gap={{base:'10px',md:'20px'}} direction={{base:'column', md:'row'}}>
                         {
