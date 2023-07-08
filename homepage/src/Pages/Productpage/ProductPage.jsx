@@ -306,11 +306,11 @@ export default function ProductPage() {
 
  return (
 
-  <Box my={"50px"}>
+  <Box bg={"#F5F5F5"} padding={"50px"}>
 
    <Box>
 
-    <Breadcrumbs />
+    {/* <Breadcrumbs /> */}
 
     <Flex justify={"end"} mt={"10px"}>
 
@@ -396,7 +396,7 @@ export default function ProductPage() {
 
      <Box
 
-      w={{ base: "100%", lg: "22%" }}
+      w={{ base: "100%", lg: "20%" }}
 
       m="auto"
 
@@ -584,7 +584,7 @@ export default function ProductPage() {
 
       <Box
 
-       w={{ base: "90%", lg: "75%" }}
+       w={{ base: "90%", lg: "65%" }}
 
        m="auto"
 

@@ -121,10 +121,9 @@ const Detailspage = () => {
   const discount = currproduct.id;
 
   return (
-    <Box w={"90%"} m="auto" my={"50px"} color={"white"}>
+    <Box w={"100%"} m="auto" p="2em"  color={"white"} bg="var(--bodyblack)">
       {!isLoading && currproduct.images !== undefined ? (
        <Box>
-        <Breadcrumbs/>
 
         <Flex gap={"40px"} mt='30px'>
           <Box className="firstDiv" w={"50%"}>
