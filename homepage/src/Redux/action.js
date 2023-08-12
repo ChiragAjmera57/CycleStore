@@ -65,7 +65,7 @@ export const getProducts =
   ) =>
   (dispatch) => {
     dispatch(getProductsRequestAction());
-    let url = `https://specialized-bike-json-server.onrender.com/products?_page=${page}&_limit=9`;
+    let url = `https://kind-puce-adder-garb.cyclic.app/products?_page=${page}&_limit=9`;
 
     if (sorting) {
       url += `&_sort=price&_order=${sorting}`;
@@ -112,8 +112,9 @@ export const getProducts =
 export const getSingleProduct = (id) => (dispatch) => {
   dispatch(getProductsRequestAction());
   axios
-    .get(`https://specialized-bike-json-server.onrender.com/products/${id}`)
-    .then((res) => dispatch(getSingleProductAction(res.data)))
+    .get(`https://kind-puce-adder-garb.cyclic.app/products/${id}`)
+    .then((res) =>{console.log(res.data[0]);
+       dispatch(getSingleProductAction(res.data[0]))})
     .catch(() => dispatch(getProductsFailureAction()));
 };
 
@@ -172,22 +173,24 @@ const decrementCartQuantityAction = (payload) => {
 export const getCartProducts = (dispatch) => {
   dispatch(getCartDataRequestAction());
   axios
-    .get(`https://specialized-bike-json-server.onrender.com/cart`)
-    .then((res) => dispatch(getCartDataSuccessAction(res.data)))
+    .get(`https://kind-puce-adder-garb.cyclic.app/cart`)
+    .then((res) =>{ console.log(res.data)
+    dispatch(getCartDataSuccessAction(res.data))})
     .catch(() => dispatch(getCartDataFailureAction()));
 };
 
 export const postCartProduct = (newProduct) => (dispatch) => {
   dispatch(getCartDataRequestAction());
+  console.log(newProduct);
   axios
-    .post(`https://specialized-bike-json-server.onrender.com/cart`, newProduct)
+    .post(`https://kind-puce-adder-garb.cyclic.app/cart`, newProduct)
     .then((res) => dispatch(postCartDataAction(res.data)))
     .catch(() => dispatch(getCartDataFailureAction()));
 };
 
 export const deleteCartProduct = (id) => (dispatch) => {
   axios
-    .delete(`https://specialized-bike-json-server.onrender.com/cart/${id}`)
+    .delete(`https://kind-puce-adder-garb.cyclic.app/cart/${id}`)
     .then((res) => dispatch(deleteCartDataAction(id)));
 };
 
@@ -271,7 +274,7 @@ const removeWishAction = (payload) => {
 export const getWishList = (dispatch) => {
   dispatch(getWishRequestAction());
   axios
-    .get(`https://specialized-bike-json-server.onrender.com/wishList`)
+    .get(`https://kind-puce-adder-garb.cyclic.app/wishList`)
     .then((res) => dispatch(getWishSuccessAction(res.data)))
     .catch(() => dispatch(getWishFailureAction()));
 };
@@ -279,7 +282,7 @@ export const getWishList = (dispatch) => {
 export const removeWish = (id) => (dispatch) => {
   dispatch(getWishRequestAction());
   axios
-    .delete(`https://specialized-bike-json-server.onrender.com/wishList/${id}`)
+    .delete(`https://kind-puce-adder-garb.cyclic.app/wishList/${id}`)
     .then((res) => dispatch(removeWishAction(id)))
     .catch(() => dispatch(getWishFailureAction()));
 };
@@ -287,7 +290,7 @@ export const removeWish = (id) => (dispatch) => {
 export const addWish = (newWish) => (dispatch) => {
   dispatch(getWishRequestAction());
   axios
-    .post(`https://specialized-bike-json-server.onrender.com/wishList`, newWish)
+    .post(`https://kind-puce-adder-garb.cyclic.app/wishList`, newWish)
     .then((res) => dispatch(addWishAction(res.data)));
 };
 

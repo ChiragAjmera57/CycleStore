@@ -97,9 +97,12 @@ import {
  
  
  const Navbar = () => {
-  const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0()
- 
+  // const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0()
   const navigate = useNavigate();
+  const loginWithRedirect = () =>{
+    
+  }
+ 
  
   // const { isOpen, onOpen, onClose } = useDisclosure()
  
@@ -608,7 +611,7 @@ import {
 
                 
 
-{isAuthenticated ? (
+{false ? (
 
               <MenuItem>
 
@@ -623,19 +626,7 @@ import {
                bgColor="grey"
 
               m="auto"
-                onClick={() =>
-
-                 logout({
-
-                  logoutParams: {
-
-                   returnTo: window.location.origin,
-
-                  },
-
-                 })
-
-                }>
+                >
 
                 Log Out
 
@@ -647,9 +638,8 @@ import {
 
               <MenuItem>
 
-               {console.log(user)}
-
-               <Button onClick={() => loginWithRedirect()}
+              <Link to={'/login'}>
+              <Button 
                color="black"
                bgColor="grey"
 
@@ -658,6 +648,8 @@ import {
                 Log In
 
                </Button>
+              </Link>
+               
 
               </MenuItem>
 

@@ -86,7 +86,7 @@ function RadioCard(props) {
 
 export function FilterColor({setColorFilter}) {
 
- const options = ["RED", "YELLOW", "ORANGE", "GREEN", "GREY", "BLUE", "PINK", "WHITE", "BLACK"];
+ const options = ["red", "yellow", "orange", "green", "grey", "blue", "pink", "white", "black"];
 
  const { getRootProps, getRadioProps } = useRadioGroup({
 
